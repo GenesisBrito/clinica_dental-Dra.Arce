@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Login_Dentista"
-    android:background="#e0f6f9">
+    android:background="#1191A3">
 
     <ImageView
         android:id="@+id/imageViewDentista"
@@ -31,7 +31,8 @@
         android:layout_marginEnd="70dp"
         android:layout_marginBottom="428dp"
         android:hint="@string/nombre_de_usuario"
-        android:textColor="#001944" />
+        android:textColor="#001944"
+        android:backgroundTint="@android:color/darker_gray"/>
 
     <EditText
         android:id="@+id/editTextPasswordDentista"
@@ -47,7 +48,8 @@
         android:inputType="textPassword"
         android:minHeight="48dp"
         android:textColor="#001944"
-        tools:ignore="TouchTargetSizeCheck" />
+        tools:ignore="TouchTargetSizeCheck"
+        android:backgroundTint="@android:color/darker_gray"/>
 
     <Button
         android:id="@+id/buttonLoginDentista"
