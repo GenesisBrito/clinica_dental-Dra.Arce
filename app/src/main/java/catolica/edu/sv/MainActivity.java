@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void selectRole(View view) {
         String selectedRole = "";
-
+        // esta es la configuracion para llamar los botones
         if (view.getId() == R.id.buttonDentista) {
             selectedRole = "Dentista";
             Intent intentDentista = new Intent(this, Login_Dentista.class);
