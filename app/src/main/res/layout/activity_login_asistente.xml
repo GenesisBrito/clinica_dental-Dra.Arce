@@ -1,0 +1,54 @@
+<!-- activity_login_dentista.xml -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login_Asistente"
+    android:background="#e0f6f9">
+
+    <ImageView
+        android:id="@+id/imageViewAsistente"
+        android:layout_width="137dp"
+        android:layout_height="153dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="199dp"
+        android:layout_marginEnd="135dp"
+        android:src="@drawable/asistente" />
+
+    <EditText
+        android:id="@+id/editTextUsernameAsistente"
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="293dp"
+        android:hint="Nombre de usuario" />
+
+    <EditText
+        android:id="@+id/editTextPasswordAsistente"
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="220dp"
+        android:hint="Contraseña"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/buttonLoginAsistente"
+        android:layout_width="156dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="125dp"
+        android:layout_marginBottom="111dp"
+        android:backgroundTint="#026165"
+        android:onClick="loginAsistente"
+        android:text="Iniciar Sesión" />
+
+</RelativeLayout>
