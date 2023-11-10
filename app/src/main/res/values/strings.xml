@@ -10,4 +10,7 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
     <string name="title_activity_login">LoginActivity</string>
+    <string name="asistente">Asistente</string>
+    <string name="dentista">Dentista</string>
+    <string name="seleccione_su_rol">Seleccione su rol:</string>
 </resources>

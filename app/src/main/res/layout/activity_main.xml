@@ -16,7 +16,7 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="137dp"
         android:layout_marginBottom="323dp"
-        android:text="Seleccione su rol:"
+        android:text="@string/seleccione_su_rol"
         android:textSize="18sp" />
 
     <Button
@@ -25,11 +25,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="236dp"
-        android:layout_marginBottom="170dp"
+        android:layout_marginEnd="237dp"
+        android:layout_marginBottom="168dp"
         android:backgroundTint="#026165"
         android:onClick="selectRole"
-        android:text="Dentista" />
+        android:text="@string/dentista" />
 
     <Button
         android:id="@+id/buttonAsistente"
@@ -41,7 +41,7 @@
         android:layout_marginBottom="168dp"
         android:backgroundTint="#026165"
         android:onClick="selectRole"
-        android:text="Asistente" />
+        android:text="@string/asistente" />
 
     <ImageView
         android:id="@+id/imageView"
