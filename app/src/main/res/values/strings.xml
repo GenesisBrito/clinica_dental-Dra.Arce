@@ -19,4 +19,8 @@
     <string name="nombre_de_usuario_">Nombre de usuario</string>
     <string name="iniciar_sesi_n_">Iniciar Sesión</string>
     <string name="contrase_a_">Contraseña</string>
+    <string name="agregar_paciente">Agregar Paciente</string>
+    <string name="ver_citas">Ver Citas</string>
+    <string name="bienvenido_dentista">Bienvenido Dentista</string>
+
 </resources>
