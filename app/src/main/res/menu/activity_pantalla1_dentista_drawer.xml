@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:id="@+id/grupo_citas" android:checkableBehavior="single">
+        <item
+            android:id="@+id/action_ver_citas"
+            android:title="@string/ver_citas"
+            android:textAppearance="@style/MenuItemTextAppearance" />
+    </group>
+
+    <!-- Grupo Pacientes -->
+    <group android:id="@+id/grupo_pacientes" android:checkableBehavior="single">
+        <item
+            android:id="@+id/action_ver_pacientes"
+            android:title="Ver Pacientes"
+            android:textAppearance="@style/MenuItemTextAppearance" />
+    </group>
+
+    <!-- Grupo Tratamientos -->
+    <group android:id="@+id/grupo_tratamientos" android:checkableBehavior="single">
+        <item
+            android:id="@+id/action_gestionar_tratamientos"
+            android:title="Gestionar Tratamientos"
+            android:textAppearance="@style/MenuItemTextAppearance" />
+    </group>
+
+    <!-- Grupo Comunicación -->
+    <group android:id="@+id/grupo_comunicacion"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/action_chat_asistente"
+            android:title="Chat con Asistente"
+            android:textAppearance="@style/MenuItemTextAppearance" />
+    </group>
+
+    <!-- Otros Grupos según necesidades -->
+
+    <!-- Grupo Salir -->
+    <group android:id="@+id/grupo_salir" android:checkableBehavior="single">
+        <item
+            android:id="@+id/action_salir"
+            android:title="Salir"
+            android:textAppearance="@style/MenuItemTextAppearance" />
+    </group>
+
+</menu>

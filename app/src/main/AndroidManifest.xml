@@ -15,7 +15,7 @@
 
         <activity
             android:name=".Pantalla_1_Dentista"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Login_Asistente"
             android:exported="false" />

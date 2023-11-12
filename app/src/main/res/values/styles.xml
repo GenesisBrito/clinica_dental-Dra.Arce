@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dentro de res/values/styles.xml o tu archivo de estilos -->
+
+    <style name="Theme.Clinica_dentalDraArce" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Otros atributos del tema -->
+        <item name="colorPrimary">@color/menu_1</item>
+        <item name="colorPrimaryVariant">@color/menu_1</item>
+        <!-- Estilo del menú -->
+        <item name="android:itemTextAppearance">@style/MenuItemTextAppearance</item>
+    </style>
+
+    <style name="MenuItemTextAppearance">
+        <!-- Estilo específico para el texto del menú -->
+        <item name="android:textColor">@color/black</item>
+        <!-- Otros atributos del texto del menú si es necesario -->
+    </style>
+
+</resources>
