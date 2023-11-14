@@ -4,12 +4,12 @@ plugins {
 
 android {
     namespace = "catolica.edu.sv"
-    compileSdk = 34
+    compileSdk = 33
 
     defaultConfig {
         applicationId = "catolica.edu.sv"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 33
         versionCode = 1
         versionName = "1.0"
 
@@ -33,14 +33,14 @@ android {
 
 dependencies {
 
-    implementation ("org.jetbrains.kotlin:kotlin-stdlib:1.8.10")
-    implementation ("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.10")
+    implementation ("org.jetbrains.kotlin:kotlin-stdlib:1.9.20")
+    implementation ("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.20")
     implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("com.google.android.material:material:1.8.0")
+    implementation("com.google.android.material:material:1.10.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
-    implementation("androidx.annotation:annotation:1.6.0")
-    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.1")
-    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1")
+    implementation("androidx.annotation:annotation:1.7.0")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.2")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
     implementation("androidx.mediarouter:mediarouter:1.6.0")
     implementation("androidx.navigation:navigation-fragment:2.7.5")
     implementation("androidx.navigation:navigation-ui:2.7.5")
