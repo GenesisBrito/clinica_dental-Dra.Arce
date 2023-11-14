@@ -7,49 +7,35 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    tools:context=".Pantalla_1_Dentista">
+    tools:context=".configuracion">
 
 
     <LinearLayout
+        android:id="@+id/grupo_configuracion"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <include
-            layout="@layout/toolbar"/>
-
         <ImageView
             android:id="@+id/menu"
-            android:layout_width="match_parent"
-            android:layout_height="203dp"
-            android:gravity="center"
-            android:src="@drawable/doc" />
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
 
-        <TextView
-            android:layout_width="413dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="0dp"
-            android:background="#900765CA"
-            android:text="@string/bienvenida"
-            android:textAlignment="center"
-            android:textColor="@color/menu_1"
-            android:textSize="36sp"
-            tools:ignore="TextContrastCheck" />
+        <include
+            layout="@layout/toolbar"/>
 
         <TextView
             android:layout_width="410dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="0dp"
-            android:background="#8115787C"
-            android:text="@string/actividades"
+            android:text="@string/Configuracion"
             android:textAlignment="center"
             android:textColor="@color/menu_1"
-            android:textSize="19sp" />
+            android:textSize="36sp" />
 
     </LinearLayout>
-    
+
     <RelativeLayout
         android:layout_width="300dp"
         android:layout_height="match_parent"
@@ -62,4 +48,3 @@
     </RelativeLayout>
 
 </androidx.drawerlayout.widget.DrawerLayout>
-

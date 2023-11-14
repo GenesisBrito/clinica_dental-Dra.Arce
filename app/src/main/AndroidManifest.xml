@@ -12,10 +12,26 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Clinica_dentalDraArce"
         tools:targetApi="34">
-
+        <activity
+            android:name=".comunicacion"
+            android:exported="false" />
+        <activity
+            android:name=".tratamientos"
+            android:exported="false" />
+        <activity
+            android:name=".configuracion"
+            android:exported="false" />
+        <activity
+            android:name=".citas"
+            android:exported="false" />
+        <activity
+            android:name=".paciente"
+            android:exported="false" />
         <activity
             android:name=".Pantalla_1_Dentista"
-            android:exported="true" />
+            android:exported="true"
+            android:label="clinica_dental-Dra.Arce"
+            android:theme="@style/Theme.Clinica_dentalDraArce.NoActionBar"/>
         <activity
             android:name=".Login_Asistente"
             android:exported="false" />
@@ -24,9 +40,12 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:label="clinica_dental-Dra.Arce"
+            android:theme="@style/Theme.Clinica_dentalDraArce.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

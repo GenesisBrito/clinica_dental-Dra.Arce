@@ -1,0 +1,45 @@
+<!-- item_cita.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:background="@drawable/shape_registro_cita">
+
+
+        <!-- Contenido de la cita -->
+        <TextView
+            android:id="@+id/textViewFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Fecha"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/textViewHora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Hora"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_below="@id/textViewFecha"
+            android:layout_alignStart="@id/textViewFecha"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/textViewDescripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Descripcion_Cita"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_below="@id/textViewHora"
+            android:layout_alignStart="@id/textViewHora"
+            android:layout_marginTop="8dp" />
+
+        <!-- Más detalles sobre la cita según tus necesidades -->
+
+</RelativeLayout>

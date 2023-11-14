@@ -1,15 +1,5 @@
 <resources>
     <string name="app_name">clinica_dental-Dra.Arce</string>
-    <string name="title_activity_login_asistente">Login_Asistente</string>
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome !"</string>
-    <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
-    <string name="title_activity_login">LoginActivity</string>
     <string name="asistente">Asistente</string>
     <string name="dentista">Dentista</string>
     <string name="seleccione_su_rol">Seleccione su rol:</string>
@@ -21,5 +11,30 @@
     <string name="contrase_a_">Contraseña</string>
     <string name="agregar_paciente">Agregar Paciente</string>
     <string name="ver_citas">Ver Citas</string>
-    <string name="bienvenido_dentista">Bienvenido Dentista</string>
+    <string name="bienvenido_dentista">Bienvenida Dentista</string>
+    <string name="toolbar_logo">CLINICA DENTAL</string>
+
+
+    <string name="bienvenida">Bienvenida Dra. Daniela</string>
+    <string name="actividades">Estas son las actividades de hoy</string>
+    <string name="tratamientos">Tratamientos</string>
+    <string name="Fecha">DD/MM/AA</string>
+    <string name="Hora">00:00</string>
+    <string name="Descripcion_Cita">descripci_n_lorem_ipsum_dolor_sit_amet</string>
+    <string name="Nombre_Paciente">Paciente</string>
+    <string name="nombre_tratamiento">Tratamiento</string>
+    <string name="fecha_inicio">Inicio</string>
+    <string name="descripcion_tratamiento">Descripciòn</string>
+    <string name="todo">TODO</string>
+    <string name="Configuracion">CONFIGURACIONES</string>
+    <string name="Comunicaciones">Chat con la Asistente</string>
+    <string name="todo_">TODO</string>
+    <string name="edad_paciente">Edad</string>
+    <string name="diagn_stico">Diagnostico</string>
+    <string name="Ultima_visita">Fecha</string>
+    <string name="Correo_bar">daniarce2023_clinicadental_com</string>
+    <string name="ver_pacientes">Pacientes</string>
+    <string name="Salir">Salir</string>
+
+
 </resources>

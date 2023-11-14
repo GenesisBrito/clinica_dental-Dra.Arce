@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:background="@drawable/shape_registro_cita">
+
+    <!-- Contenido del tratamiento -->
+    <TextView
+        android:id="@+id/textViewNombrePaciente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Nombre_Paciente"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"/>
+    <TextView
+        android:id="@+id/textViewNombreTratamiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nombre_tratamiento"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/textViewNombrePaciente"
+        android:layout_alignStart="@id/textViewNombrePaciente"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/textViewFechaInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fecha_inicio"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/textViewNombreTratamiento"
+        android:layout_alignStart="@id/textViewNombreTratamiento"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/textViewDescripcionTratamiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/descripcion_tratamiento"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/textViewFechaInicio"
+        android:layout_alignStart="@id/textViewFechaInicio"
+        android:layout_marginTop="8dp" />
+
+    <!-- Otros detalles del tratamiento según tus necesidades -->
+
+</RelativeLayout>

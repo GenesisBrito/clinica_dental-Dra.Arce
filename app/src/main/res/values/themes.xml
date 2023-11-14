@@ -1,0 +1,11 @@
+<resources>
+
+    <style name="Theme.Clinica_dentalDraArce.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Clinica_dentalDraArce.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Clinica_dentalDraArce.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

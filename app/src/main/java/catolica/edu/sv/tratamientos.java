@@ -1,4 +1,5 @@
 package catolica.edu.sv;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -11,7 +12,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-public class Pantalla_1_Dentista extends AppCompatActivity {
+public class tratamientos extends AppCompatActivity {
 
     DrawerLayout drawerLayout;
     ImageView menu;
@@ -21,7 +22,7 @@ public class Pantalla_1_Dentista extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pantalla1_dentista);
+        setContentView(R.layout.activity_tratamientos);
 
         drawerLayout = findViewById(R.id.drawerLayout);
         menu = findViewById(R.id.menu);
@@ -42,43 +43,44 @@ public class Pantalla_1_Dentista extends AppCompatActivity {
         grupo_citas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                redirectActivity(Pantalla_1_Dentista.this, citas.class);
+                redirectActivity(tratamientos.this, citas.class);
             }
         });
 
         grupo_pacientes.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View v) {
-                redirectActivity(Pantalla_1_Dentista.this, paciente.class);
+                redirectActivity(tratamientos.this, paciente.class);
             }
         });
 
         grupo_tratamientos.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
-                redirectActivity(Pantalla_1_Dentista.this, tratamientos.class);
+                // Abre el drawer
+                openDrawer(drawerLayout);
             }
         });
 
         grupo_comunicacion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                redirectActivity(Pantalla_1_Dentista.this, comunicacion.class);
+                redirectActivity(tratamientos.this, comunicacion.class);
             }
         });
 
         grupo_configuracion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                redirectActivity(Pantalla_1_Dentista.this, configuracion.class);
+                redirectActivity(tratamientos.this, configuracion.class);
             }
         });
 
         grupo_salir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Pantalla_1_Dentista.this, "salir", Toast.LENGTH_SHORT).show();
+                Toast.makeText(tratamientos.this, "salir", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -99,4 +101,3 @@ public class Pantalla_1_Dentista extends AppCompatActivity {
         activity.startActivity(intent);
     }
 }
-
