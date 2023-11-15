@@ -16,7 +16,7 @@ public class Pantalla_1_Dentista extends AppCompatActivity {
     DrawerLayout drawerLayout;
     ImageView menu;
 
-    LinearLayout grupo_citas, grupo_pacientes, grupo_tratamientos, grupo_comunicacion, grupo_configuracion, grupo_salir;
+    LinearLayout inicio, grupo_citas, grupo_pacientes, grupo_tratamientos, grupo_comunicacion, grupo_configuracion, grupo_salir;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +25,7 @@ public class Pantalla_1_Dentista extends AppCompatActivity {
 
         drawerLayout = findViewById(R.id.drawerLayout);
         menu = findViewById(R.id.menu);
+        inicio = findViewById(R.id.inicio);
         grupo_citas = findViewById(R.id.grupo_citas);
         grupo_pacientes = findViewById(R.id.grupo_pacientes);
         grupo_tratamientos = findViewById(R.id.grupo_tratamientos);
@@ -32,10 +33,18 @@ public class Pantalla_1_Dentista extends AppCompatActivity {
         grupo_configuracion = findViewById(R.id.grupo_configuracion);
         grupo_salir = findViewById(R.id.grupo_salir);
 
+
         menu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openDrawer(drawerLayout);
+            }
+        });
+
+        inicio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                recreate();
             }
         });
 

@@ -35,6 +35,11 @@
     <string name="Correo_bar">daniarce2023_clinicadental_com</string>
     <string name="ver_pacientes">Pacientes</string>
     <string name="Salir">Salir</string>
+    <string name="mensaje_del_asistente">Mensaje del asistente</string>
+    <string name="enviar">Enviar</string>
+    <string name="escribe_un_mensaje">Escribe un mensaje...</string>
+    <string name="mensaje_dentista">Mensaje del Dentista</string>
+    <string name="Inicio">Inicio</string>
 
 
 </resources>

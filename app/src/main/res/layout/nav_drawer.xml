@@ -37,6 +37,24 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/inicio"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_inicio"
+            android:drawablePadding="8dp"
+            android:text="@string/Inicio"
+            android:textColor="@color/menu_1"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/grupo_citas"
         android:layout_width="184dp"
         android:layout_height="wrap_content"

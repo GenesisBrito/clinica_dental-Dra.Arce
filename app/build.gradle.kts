@@ -32,7 +32,6 @@ android {
 }
 
 dependencies {
-
     implementation ("org.jetbrains.kotlin:kotlin-stdlib:1.9.20")
     implementation ("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.20")
     implementation("androidx.appcompat:appcompat:1.6.1")

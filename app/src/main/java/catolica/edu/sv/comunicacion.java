@@ -3,22 +3,31 @@ package catolica.edu.sv;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
-public class comunicacion extends AppCompatActivity {
+import java.util.ArrayList;
+import java.util.List;
 
+
+public class comunicacion extends AppCompatActivity {
 
     DrawerLayout drawerLayout;
     ImageView menu;
 
-    LinearLayout grupo_citas, grupo_pacientes, grupo_tratamientos, grupo_comunicacion, grupo_configuracion, grupo_salir;
+    LinearLayout inicio, grupo_citas, grupo_pacientes, grupo_tratamientos, grupo_comunicacion, grupo_configuracion, grupo_salir;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +36,7 @@ public class comunicacion extends AppCompatActivity {
 
         drawerLayout = findViewById(R.id.drawerLayout);
         menu = findViewById(R.id.menu);
+        inicio=findViewById(R.id.inicio);
         grupo_citas = findViewById(R.id.grupo_citas);
         grupo_pacientes = findViewById(R.id.grupo_pacientes);
         grupo_tratamientos = findViewById(R.id.grupo_tratamientos);
@@ -38,6 +48,12 @@ public class comunicacion extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 openDrawer(drawerLayout);
+            }
+        });
+        inicio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                redirectActivity(comunicacion.this, Pantalla_1_Dentista.class);
             }
         });
 
@@ -83,7 +99,9 @@ public class comunicacion extends AppCompatActivity {
                 Toast.makeText(comunicacion.this, "salir", Toast.LENGTH_SHORT).show();
             }
         });
+
     }
+
 
     public static void openDrawer(DrawerLayout drawerLayout) {
         drawerLayout.openDrawer(GravityCompat.START);

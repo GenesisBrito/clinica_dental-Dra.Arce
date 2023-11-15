@@ -14,7 +14,8 @@
         android:id="@+id/grupo_comunicacion"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="@color/gray">
 
         <ImageView
             android:id="@+id/menu"
@@ -26,14 +27,55 @@
 
         <TextView
             android:layout_width="410dp"
-            android:layout_height="wrap_content"
+            android:layout_height="1dp"
             android:layout_gravity="center"
             android:layout_marginTop="0dp"
             android:text="@string/Comunicaciones"
             android:textAlignment="center"
             android:textColor="@color/menu_1"
-            android:textSize="36sp" />
+            android:textSize="36sp"
+            tools:ignore="TextSizeCheck" />
 
+        <!-- Lista de mensajes -->
+
+        <!-- Campo para ingresar mensaje -->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewChat"
+            android:layout_width="385dp"
+            android:layout_height="349dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:background="@color/menu_1"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_chat_asistente" />
+
+        <EditText
+            android:id="@+id/editTextMessage"
+            android:layout_width="375dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center"
+            android:layout_toLeftOf="@+id/buttonSend"
+            android:background="#BCB5B5"
+            android:hint="@string/escribe_un_mensaje"
+            android:minHeight="48dp"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/buttonSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/menu_1"
+            android:onClick="@string/enviar"
+            android:padding="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/enviar" />
     </LinearLayout>
 
     <RelativeLayout
@@ -42,8 +84,7 @@
         android:background="@color/white"
         android:layout_gravity="start">
 
-        <include
-            layout="@layout/nav_drawer"/>
+        <include layout="@layout/nav_drawer" />
 
     </RelativeLayout>
 
